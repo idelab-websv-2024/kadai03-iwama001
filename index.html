@@ -9,11 +9,13 @@
             function check()
             {
                 alert( document.getElementById('test') );
+                document.getElementById('test').innerHTML = '<h1>test</h1>'
             }
 	        function updateMessage(mes)
 	        {
-                document.getElementById('').innerHTML = mes;
-	        }
+            alert('test');
+                document.getElementById('mes').innerHTML = mes;
+            }
     </script>
   </head>
 
@@ -25,7 +27,7 @@
     <input type='button' value='Bonjour' onclick='updateMessage("Bonjour")'>
 
     <hr />
-    <div id='test'>ここが id:test の中</div>
+    <div id='test'>document.getElementById('test')</div>
     <hr />
     <div id='mes'></div>
 
